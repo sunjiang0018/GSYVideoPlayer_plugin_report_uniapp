@@ -1,0 +1,26 @@
+{
+	"name": "gsyvideoplayer-plugin",
+	"id": "gsyvideoplayer_plugin",
+	"version": "1.0",
+	"description": "插件描述信息",
+	"_dp_type": "nativeplugin",
+	"_dp_nativeplugin": {
+		"android": {
+			"plugins": [{
+				"type": "module",
+				"name": "gsyvideoplayer_plugin",
+				"class": "com.sunjiang.gsyvideoplayer_plugin.VideoWXModule"
+			}],
+			"integrateType": "aar",
+			"abis": [
+				"armeabi-v7a", "arm64-v8a"
+			],
+			"dependencies": [
+				"com.shuyu:gsyVideoPlayer-java:6.0.3",
+				"com.shuyu:gsyVideoPlayer-armv7a:6.0.3",
+				"com.shuyu:gsyVideoPlayer-arm64:6.0.3"
+			],
+			"minSdkVersion": "21"
+		}
+	}
+}
